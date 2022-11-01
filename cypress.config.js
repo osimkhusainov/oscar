@@ -7,7 +7,7 @@ module.exports = defineConfig({
       allureWriter(on, config);
       return config;
     },
-    baseUrl: "https://www.hioscar.com//",
+    baseUrl: "https://www.hioscar.com/",
   },
   defaultCommandTimeout: 15000,
   experimentalWebKitSupport: true,
