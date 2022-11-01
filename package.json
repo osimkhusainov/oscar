@@ -1,0 +1,25 @@
+{
+  "name": "oscar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:safari": "cypress run --browser webkit",
+    "cy:run": "cypress run --env allure=true --browser chrome",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "test": "npm run cy:run || npm run posttest",
+    "posttest": "npm run allure:report",
+    "report": "allure serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.33.1",
+    "@testing-library/cypress": "^8.0.3",
+    "allure-commandline": "^2.18.1",
+    "cypress": "^10.11.0",
+    "playwright-webkit": "^1.27.1"
+  }
+}
