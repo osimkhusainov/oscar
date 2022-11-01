@@ -11,5 +11,5 @@ module.exports = defineConfig({
   },
   defaultCommandTimeout: 15000,
   experimentalWebKitSupport: true,
-  // retries: 2,
+  retries: 2,
 });
