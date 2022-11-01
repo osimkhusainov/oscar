@@ -1,7 +1,10 @@
 {
   "name": "oscar",
   "version": "1.0.0",
-  "description": "",
+  "description": "Take home assessment Oscar Health",
+  "repository": {
+    "url": "https://github.com/osimkhusainov/oscarhealth/tree/main"
+  },
   "main": "index.js",
   "scripts": {
     "cy:run:chrome": "cypress run --browser chrome",
@@ -13,7 +16,7 @@
     "posttest": "npm run allure:report",
     "report": "allure serve"
   },
-  "author": "",
+  "author": "Osim Khusainov",
   "license": "ISC",
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.33.1",
